@@ -1,0 +1,16 @@
+{
+    "name": "John",
+    "bid": {
+        "platform": "iSqft",
+        "title": "Cool office space needs cleaning"
+    },
+    "related": {
+        "projects": [ "Project 1", "Project 2", "Project 3"]
+    },
+    "customContent": "We are perfect for you.",
+    "contact": {
+        "calendar": "example.com/calendar/book",
+        "website": "example.com",
+        "phone": "000-000-0000"
+    }
+}
