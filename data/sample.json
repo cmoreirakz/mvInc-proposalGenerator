@@ -1,5 +1,5 @@
 {
-    "name": "John",
+    "name": "Camila",
     "bid": {
         "platform": "iSqft",
         "title": "Cool office space needs cleaning"
@@ -12,5 +12,12 @@
         "calendar": "example.com/calendar/book",
         "website": "example.com",
         "phone": "000-000-0000"
+    },
+    "images": {
+        "row1": "../img/row1.jpg"
+    },
+    "locations": {
+        "row1": "Metropolitan Center",
+        "sqft1": "280,000 Sq Ft."
     }
 }
