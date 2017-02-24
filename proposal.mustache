@@ -1,32 +1,136 @@
-Hello {{name}},
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+    font-family: "Lucida Sans", sans-serif;
 
-This email is in regards to your invitation to bid on {{bid.platform}} titled "{{bid.title}}".
-
-We'd love to end your search for a company to take on this work! We've been in business for over 20 years and our team of highly-experienced employees has handled such projects in the past. Here are a few examples:
-
-{{related.projects}}
-
-{{customContent}}
-
-Accompanying our experience is a structured pricing model that we'd align to your project's timelines.
-
-Here's how we stand out:
-- Offering 24/7 contact, including weekends and holidays
-- Timely proposals and billing statements for overall project spend
-- Well spoken by our past clients and an excellent track record of project completion time
-- We revisit and review job sites intra-week, ensuring the utmost application of our standards and services
-
-Without taking up more of your time, here's a
-- Link to schedule a free pricing appointment to speak with one of our team members:
-{{contact.calendar}}
-- A link to our website for more information
-{{contact.website}}
-- Our number to speak with us right now about this proposal:
-{{contact.phone}}
-
-Thank you!
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 
-Best Regards,
+.header {
+    background-color: #0099cc;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
 
-MV Cleaning
+.menu-header {
+	text-align: center;
+    margin-bottom: 7px;
+    font-style: oblique;    
+}
+
+.examples {
+    border: 2px solid;
+}
+</style>
+</head>
+
+
+<body>
+    
+    <div class="header">
+      <h1>MV Cleaning Inc.</h1>
+      <h2>Our business is makings yours shine!<h2>
+    </div>
+
+    <div class="row">
+
+        <div class="col-3 menu">
+            <div class="menu-header">
+                Some of our services
+            </div>
+            <div>
+              <ul>
+                <li>Post-Construction Clean-Up</li>
+                <li>Pressure Washing</li>
+                <li>Strip and Wax Floors</li>
+                <li>Wash windows inside and out</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <h3>Dear {{name}},</h3>
+            <p>
+                This email is in regards to your invitation to bid on 
+                <em>{{bid.platform}}</em> titled 
+                <strong>"{{bid.title}}"</strong>.
+            </p>
+            
+            <h4>We'd love to end your search for a company to take on this work!</h4>
+                
+            <p>We've been in business for over 20 years and our team of highly experienced employees has handled such projects in the past.</p>
+                
+            <h4>Here are a few examples:</h4>
+            <div class="examples">
+          		
+          		<div class="row">
+                	<div class="col-4">
+                    	image
+                    </div>
+                    <div class="col-4">
+                    	Location
+                    </div>
+                    <div class="col-4">
+                    	Sq Ft.
+                    </div>        
+        		</div>
+        		
+        	   <div class="row">
+        	       <div class="col-4">
+        	           {{images.row1}}
+        	       </div>
+        	       <div class="col-4">
+        	           {{locations.row1}}
+        	       </div>
+        	       <div class="col-4">
+        	           {{locations.sqft1}}
+        	       </div>>
+    		</div>
+    		</div>{{!--end examples--}}
+        </div>
+
+    </div>
+
+</body>
