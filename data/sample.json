@@ -14,10 +14,8 @@
         "phone": "000-000-0000"
     },
     "images": {
-        "row1": "../img/row1.jpg"
-    },
-    "locations": {
-        "row1": "Metropolitan Center",
-        "sqft1": "280,000 Sq Ft."
+        "col1": "./img/col1.jpg",
+        "col2": "./img/col2.png",
+        "col3": "./img/col3.jpg"
     }
 }

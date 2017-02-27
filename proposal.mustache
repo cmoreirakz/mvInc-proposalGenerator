@@ -31,7 +31,7 @@
 .col-12 {width: 100%;}
 
 
-.header {
+.header-footer {
     background-color: #0099cc;
     color: #ffffff;
     padding: 15px;
@@ -60,8 +60,51 @@
     font-style: oblique;    
 }
 
-.examples {
-    border: 2px solid;
+
+
+/*examples */
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 33.33%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
 </head>
@@ -69,7 +112,7 @@
 
 <body>
     
-    <div class="header">
+    <div class="header-footer">
       <h1>MV Cleaning Inc.</h1>
       <h2>Our business is makings yours shine!<h2>
     </div>
@@ -104,33 +147,62 @@
                 
             <h4>Here are a few examples:</h4>
             <div class="examples">
-          		
-          		<div class="row">
-                	<div class="col-4">
-                    	image
+                <div class="responsive">
+                    <div class="img">
+                        <a target ="_blank" href="{{images.col1}}">
+                            <img src="{{images.col1}}" alt="image1" width="300" height="200">
+                        </a>
+                        <div class="desc">
+                            <em>- Metropolitan Center - Uptown Charlotte</em> <h5> Size: 280K SqFt.</h5>
+                        </div>
                     </div>
-                    <div class="col-4">
-                    	Location
+                </div>
+            
+            
+                <div class="responsive">
+                    <div class="img">
+                        <a target ="_blank" href="{{images.col2}}">
+                            <img src="{{images.col2}}" alt="image1" width="500" height="300">
+                        </a>
+                        <div class="desc">
+                            <em>- Red Ventures - <br> Fort Mill, SC</em> <h5> Size: 180K SqFt.</h5>
+                        </div>
                     </div>
-                    <div class="col-4">
-                    	Sq Ft.
-                    </div>        
-        		</div>
-        		
-        	   <div class="row">
-        	       <div class="col-4">
-        	           {{images.row1}}
-        	       </div>
-        	       <div class="col-4">
-        	           {{locations.row1}}
-        	       </div>
-        	       <div class="col-4">
-        	           {{locations.sqft1}}
-        	       </div>>
-    		</div>
+                </div>
+            
+            
+                <div class="responsive">
+                    <div class="img">
+                        <a target ="_blank" href="{{images.col3}}">
+                            <img src="{{images.col3}}" alt="image1" width="300" height="200">
+                        </a>
+                        <div class="desc">
+                            <em>- TTI Floor Care - Charlotte, NC</em> <h5> Size: 280K SqFt.</h5>
+                        </div>
+                    </div>
+                </div>
     		</div>{{!--end examples--}}
-        </div>
+    		
+    		<div class="stand-out">
+    		    <p>Accompanying our experience is a structured pricing model that we'd align to your project's timelines.</p>
 
+                <h4>How we stand out:</h4>
+                <ul>
+                    <li><strong>24/7 contact</strong>, including weekends and holidays.</li><br>
+                    <li><strong>Timely</strong> proposals and billing statements for overall project spend.</li><br>
+                    <li><strong>Well-Spoken</strong> by our past clients and an excellent track record of project completion time.</li><br>
+                    <li><strong>Thorough revisiting and review</strong> of job sites intra-week, ensuring the utmost application of our standards and services.</li>
+                </ul>
+
+    		</div>{{!--end stand-out--}}
+        </div>{{!--end col-9--}}
+
+    </div>
+    
+    <div class="header-footer">
+        <div class="row">
+            
+        </div>
     </div>
 
 </body>
